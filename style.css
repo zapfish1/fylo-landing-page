@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center center;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none outside none;
+}
+
+footer,
+header {
+  width: 100%;
+}
+
+:root {
+  --color-very-dark-blue: hsl(243, 87%, 12%);
+  --color-desaturated-blue: hsl(238, 22%, 44%);
+  --color-bright-blue: hsl(224, 93%, 58%);
+  --color-moderate-cyan: hsl(170, 45%, 43%);
+  --color-light-grayish-blue: hsl(240, 75%, 98%);
+  --color-light-gray: hsl(0, 0%, 75%);
+  --color-light-gray-input: hsla(0, 0%, 75%, 0.5);
+
+  --color-bright-blue-hover: hsla(224, 100%, 76%, 0.9);
+  --color-moderate-cyan-hover: hsl(170, 100%, 37%);
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  width: 25rem;
+
+  display: grid;
+  justify-items: center;
+
+  color: var(--color-very-dark-blue);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem;
+}
+
+header img {
+  width: 7rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+
+  font-family: "Raleway", sans-serif;
+}
+
+.introduction {
+  padding-top: 4rem;
+
+  text-align: center;
+
+  display: grid;
+  gap: 1rem;
+
+  padding: 2rem;
+}
+
+.introduction .information {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.introduction .information .email-button {
+  display: grid;
+  gap: 1rem;
+}
+
+.introduction h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  font-family: "Raleway", sans-serif;
+}
+
+.introduction input {
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.introduction button {
+  background-color: var(--color-bright-blue);
+  color: white;
+  padding: 0.7rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.introduction button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-bright-blue-hover);
+}
+
+.introduction button:focus {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-bright-blue-hover);
+}
+
+.development {
+  display: grid;
+  gap: 4rem;
+
+  padding: 2rem;
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+
+  background-color: var(--color-light-grayish-blue);
+
+  justify-items: center;
+}
+
+.development .information {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.development h2 {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+.development p {
+  color: var(--color-desaturated-blue);
+  justify-self: left;
+}
+
+.development .see-how {
+  display: flex;
+  gap: 0.5rem;
+
+  color: var(--color-moderate-cyan);
+
+  border-bottom: 1px solid var(--color-moderate-cyan);
+
+  width: fit-content;
+
+  margin: 2rem 0 2rem 0;
+}
+
+.development .see-how:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--color-moderate-cyan-hover);
+  border-bottom: 1px solid var(--color-moderate-cyan-hover);
+}
+
+.development .see-how:focus {
+  transition: all 0.3s ease-in-out;
+  color: var(--color-moderate-cyan-hover);
+  border-bottom: 1px solid var(--color-moderate-cyan-hover);
+}
+
+.development .see-how img {
+  object-fit: contain;
+  align-self: center;
+}
+
+.development .card {
+  background-color: white;
+  width: 90%;
+  padding: 1.5rem;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  word-spacing: 0.09rem;
+
+  display: grid;
+  gap: 0.5rem;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.development .card .testimonial {
+  display: flex;
+  gap: 0.7rem;
+
+  align-items: center;
+}
+
+.development .card .testimonial p:first-child {
+  font-weight: 800;
+  font-size: 0.6rem;
+}
+
+.development .card .testimonial p:last-child {
+  font-weight: 600;
+  font-size: 0.5rem;
+}
+
+.development .card .testimonial img {
+  width: 2rem;
+  border-radius: 100%;
+
+  object-fit: contain;
+  align-self: center;
+}
+
+.early-access {
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: var(--color-desaturated-blue);
+
+  padding: 4rem 3rem 4rem 3rem;
+
+  display: grid;
+  gap: 1rem;
+}
+
+.early-access .information {
+  display: grid;
+  gap: 1rem;
+}
+
+.early-access .email-button {
+  display: grid;
+  gap: 1rem;
+}
+
+.early-access h2 {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+.early-access input {
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.early-access button {
+  background-color: var(--color-bright-blue);
+  color: white;
+  padding: 0.7rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.early-access button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-bright-blue-hover);
+}
+
+.early-access button:active {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-bright-blue-hover);
+}
+
+footer {
+  background-color: var(--color-very-dark-blue);
+  color: white;
+  padding: 3rem 2rem 3rem 2rem;
+
+  display: grid;
+  gap: 3rem;
+
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+footer .socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .socials i {
+  outline: 1px solid white;
+  padding: 0.3rem;
+  border-radius: 100%;
+}
+
+footer .socials i:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--color-bright-blue);
+  outline: 1px solid var(--color-bright-blue);
+}
+
+footer .filter-white {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(201deg)
+    brightness(104%) contrast(101%);
+
+  width: 10rem;
+}
+
+footer div:first-of-type {
+  display: grid;
+  gap: 2rem;
+}
+
+footer div .icon-word {
+  display: flex;
+  gap: 0.8rem;
+}
+
+footer div .icon-word img {
+  object-fit: contain;
+  align-self: center;
+}
+
+footer ul {
+  display: grid;
+  gap: 1rem;
+}
+
+footer li:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--color-bright-blue);
+}
+
+@media screen and (min-width: 850px) {
+  main {
+    width: 100%;
+  }
+
+  header,
+  .introduction,
+  .development,
+  .early-access {
+    padding: 3rem;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .introduction .information {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-right: 15rem;
+  }
+
+  .introduction .information .email-button {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .introduction .information h1 {
+    font-size: 2rem;
+  }
+
+  .introduction .information button {
+    padding: 0.7rem 3rem 0.7rem 3rem;
+  }
+
+  .introduction img {
+    max-width: 80vh;
+  }
+
+  .development {
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding-top: 5rem;
+  }
+
+  .development .information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .development .information h2 {
+    font-size: 2rem;
+  }
+
+  .development .information p {
+    width: 70%;
+  }
+
+  .early-access {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15rem;
+
+    padding: 5rem 3rem 5rem 3rem;
+  }
+
+  .early-access .information {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .early-access .information h2 {
+    font-size: 1.5rem;
+  }
+
+  .early-access button {
+    width: fit-content;
+
+    padding: 0.7rem 3rem 0.7rem 3rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5rem 3rem 5rem 3rem;
+  }
+
+  footer .socials {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
